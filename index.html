@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ - Jackson</title>
+    <link rel="stylesheet" href="estilo/main.css">
+ 
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <h2>Quiz da Infor</h2>
+        <h3>Começar?</h3>
+        <div class="botaocomecar">
+            <button class="botao" onclick="comecar()">
+                <span>VAMO!</span>
+                <div class="border-botao"></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="pergunta" style="display: none;">
+        <h1 id="pergunta"></h1>
+        <input type="radio" id="resposta1" name="resposta" value="">
+        <label for="resposta1" id="resposta1_label"></label><br>
+        <input type="radio" id="resposta2" name="resposta" value="">
+        <label for="resposta2" id="resposta2_label"></label><br>
+        <input type="radio" id="resposta3" name="resposta" value="">
+        <label for="resposta3" id="resposta3_label"></label><br>
+        <input type="radio" id="resposta4" name="resposta" value="">
+        <label for="resposta4" id="resposta4_label"></label><br>
+        <button onclick="verificarResposta()">Responder</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(73, 73, 73);
+    background-image: url(../img/pexels-markusspiske-1089438.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main {
+    background-color: rgba(84, 150, 75, 0.911);
+    max-width: 700px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.main h2 {
+    padding: 20px 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    border-radius: 20px 20px 0% 0%;
+}
+
+.main h3 {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0px;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.botaocomecar {
+    width: 10em;
+    margin: auto;
+}
+
+button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #fff;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button span {
+    color: #464646;
+}
+
+button .border {
+    position: absolute;
+    border: 0.15em solid #fff;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 9em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+}
+
+button:hover .border {
+    display: block;
+    width: 9.9em;
+    height: 3.7em;
+}
+
+.botao {
+    border-radius: 2em;
+}
+
+.pergunta {
+    display: none;
+    background-color: rgba(84, 150, 75, 0.911);
+    max-width: 700px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    padding: 50px;
+}
