@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'mine';
+    src: url(../fonte/F25_Bank_Printer.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +10,7 @@
 body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(73, 73, 73);
-    background-image: url(../img/pexels-markusspiske-1089438.jpg);
+    background-image: linear-gradient(49deg, rgb(0, 0, 133) ,rgb(76, 0, 255),rgb(71, 26, 114),rgb(146, 8, 146),rgb(98, 33, 117));
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -16,20 +19,23 @@ body {
 }
 
 .main {
-    background-color: rgba(84, 150, 75, 0.911);
+    background-color: rgba(230, 223, 223, 0.205);
     max-width: 700px;
-    min-width: 300px;
+    min-width: 360px;
     height: 300px;
     border-radius: 5%;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .main h2 {
     padding: 20px 0px;
-    color: white;
+    color: rgb(236, 227, 227);
     width: 100%;
+    font-family: mine;
     text-align: center;
-    background-color: green;
-    border-radius: 20px 20px 0% 0%;
+    background-color: rgba(96, 11, 153, 0.322);
+    border-radius: 10px 10px 0% 0%;
 }
 
 .main h3 {
@@ -41,30 +47,36 @@ body {
 }
 
 .botaocomecar {
-    width: 10em;
+    width: 8em;
     margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    cursor: auto;
+    
 }
 
-button {
+button,a {
     font-size: 16px;
     position: relative;
     margin: auto;
     padding: 1em 2.5em 1em 2.5em;
     border: none;
-    background: #fff;
+    background: #cfcacf;
     transition: all 0.1s linear;
     box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
 }
 
-button:active {
+button:active,a:active {
     transform: scale(0.95);
 }
 
-button span {
-    color: #464646;
+button span, a span{
+    color: #434443;
 }
 
-button .border {
+button .border, a .border {
     position: absolute;
     border: 0.15em solid #fff;
     transition: all 0.3s 0.08s linear;
@@ -75,7 +87,7 @@ button .border {
     transform: translate(-50%, -50%);
 }
 
-button:hover .border {
+button:hover .border, a:hover .border {
     display: block;
     width: 9.9em;
     height: 3.7em;
@@ -87,10 +99,55 @@ button:hover .border {
 
 .pergunta {
     display: none;
-    background-color: rgba(84, 150, 75, 0.911);
+    background-color: rgba(156, 77, 209, 0.623);
     max-width: 700px;
     min-width: 300px;
-    height: 300px;
+    color: #fff;
     border-radius: 5%;
     padding: 50px;
+    margin-bottom: 50px;
+    
+}
+#botaoresposta{
+    border-radius: 2em;
+    cursor: pointer;
+}
+#botaoresposta strong{ 
+    color: #434443;
+
+}
+#botaoresposta:hover{
+    transform: scale(1.1);
+    transition: transform 300ms;
+}
+.botao{
+    cursor: pointer;
+    
+}
+.botao:hover{
+    transform: scale(1.1);
+    transition: transform 300ms;
+}
+.resposta_label{
+    font-size: 1.2em;
+}
+input{
+   transform: scale(1.55);
+   margin-right: 20px;
+   accent-color: #6b6477;
+}
+
+a{
+    margin: 30px 0px;
+    text-decoration: none;
+    text-align: center;
+
+}
+footer{
+    width: 100vw;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 1.1em;
+    background: #434443;
 }
